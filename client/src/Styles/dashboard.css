@@ -1,0 +1,153 @@
+.d-container {
+	height: 100vh;
+	margin: 0;
+	display: flex;
+}
+
+.d-title {
+	background-color: #6c63ff;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	display: flex;
+	align-content: center;
+	position: relative;
+}
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.d-col {
+	flex: 1;
+	height: 100vh;
+	align-items: center;
+	border-right: 3px solid #6c63ff;
+}
+
+.d-col-2 {
+	flex: 3;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.search {
+	max-width: 95%;
+	margin: 5px;
+}
+
+.channel {
+	margin: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.channel:hover {
+	background-color: rgb(226, 223, 223);
+}
+
+.input-bar {
+	height: 50px;
+	position: absolute;
+	min-height: 70px;
+	display: flex;
+	flex-direction: row;
+	bottom: 0;
+	width: 74.8%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-wrapper {
+	min-height: calc(100vh - 120px);
+	max-height: calc(100vh - 120px);
+	overflow-y: auto;
+}
+
+.channel-list {
+	overflow-y: auto;
+	max-height: calc(100vh - 110px);
+}
+
+.message-container {
+	text-align: right;
+}
+
+.message {
+	padding: 5px;
+	font-size: 15px;
+	border: 1px solid #6c63ff;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-right: 20px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.sent {
+	text-align: right;
+}
+
+.recieved {
+	text-align: left;
+}
+
+.bg {
+	background-color: #e5e4fc;
+}
+
+.popup-box {
+	position: fixed;
+	background: #00000050;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+    margin: 0px;
+}
+
+.popbox {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+	height: auto;
+	max-height: 70vh;
+	margin-top: calc(100vh - 85vh - 20px);
+	background: #fff;
+	border-radius: 4px;
+	padding: 20px;
+	border: 1px solid #999;
+	overflow: auto;
+}
+
+.close-icon {
+	content: "x";
+	cursor: pointer;
+	position: fixed;
+	right: calc(15% - 30px);
+	top: calc(100vh - 85vh - 33px);
+	background: #ededed;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	line-height: 20px;
+	text-align: center;
+	border: 1px solid #999;
+	font-size: 20px;
+}
+
+.popup-content {
+    margin: 0px;
+    width: 100%
+}
+
+.pop {
+    display: flex;
+}
